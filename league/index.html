@@ -175,7 +175,8 @@
             })
         }
         var c = (tochange) => {
-            document.getElementById(aim).src = tochange+".png"
+            document.getElementById(aim).src = tochange+".png";
+            document.getElementById(aim).setAttribute("name", tochange);
             document.querySelector("#spellchanger").style = "display: none;"
             vaim = "";
         }
